@@ -1,1 +1,329 @@
-
+<style>
+	body {
+		margin:0px;
+		padding:0px;
+	}
+</style>
+<div style="top:0;position:relative;width:calc(100% - 10px);padding:5px;background-color:#405160;box-shadow:0px 10px 10px #00000066;">
+	<a href="http://<?php echo $_SERVER["HTTP_HOST"]; ?>"><h1 style="font-family:arial;color:#f6f6ff;margin-left:25px;text-shadow:5px 5px 5px #bbbbbb;">3DG's website</h1></a>
+</div>
+<h1 align="center" style="font-family:arial;">Welcome to my website!</h1>
+<br>
+<style>
+	.g1 {
+		animation-name: g1deselect;
+		animation-iteration-count:once;
+		animation-duration: 0.25s;
+		left:calc(10% - 96px);
+		up:calc(10% - 96px);
+		position:absolute;
+		width:192px;
+		height:192px;
+	}
+	.g1:hover {
+		animation-name: g1select;
+		animation-iteration-count:once;
+		animation-duration: 0.25s;
+		left:calc(12px + 10% - 96px);
+		up:calc(12px + 10% - 96px);
+		position:absolute;
+		width:170px;
+		height:170px;
+	}
+	@keyframes g1select {
+		0% {position:absolute;left:calc(10% - 96px);up:calc(10% - 96px);width:192px;height:192px;}
+		100% {position:absolute;left:calc(12px + 10% - 96px);up:calc(25px + 10% - 96px);width:170px;height:170px;}
+	}
+	@keyframes g1deselect {
+		0% {position:absolute;left:calc(12px + 10% - 96px);up:calc(25px + 10% - 96px);width:170px;height:170px;}
+		100% {position:absolute;left:calc(10% - 96px);up:calc(10% - 96px);width:192px;height:192px;}
+	}
+	.g2 {
+		animation-name: g2deselect;
+		animation-iteration-count:once;
+		animation-duration: 0.25s;
+		left:calc(30% - 96px);
+		up:calc(30% - 96px);
+		position:absolute;
+		width:192px;
+		height:192px;
+	}
+	.g2:hover {
+		animation-name: g2select;
+		animation-iteration-count:once;
+		animation-duration: 0.25s;
+		left:calc(12px + 30% - 96px);
+		up:calc(12px + 30% - 96px);
+		position:absolute;
+		width:170px;
+		height:170px;
+	}
+	@keyframes g2select {
+		0% {position:absolute;left:calc(30% - 96px);up:calc(30% - 96px);width:192px;height:192px;}
+		100% {position:absolute;left:calc(12px + 30% - 96px);up:calc(25px + 30% - 96px);width:170px;height:170px;}
+	}
+	@keyframes g2deselect {
+		0% {position:absolute;left:calc(12px + 30% - 96px);up:calc(25px + 30% - 96px);width:170px;height:170px;}
+		100% {position:absolute;left:calc(30% - 96px);up:calc(30% - 96px);width:192px;height:192px;}
+	}
+	
+	.g3 {
+		animation-name: g3deselect;
+		animation-iteration-count:once;
+		animation-duration: 0.25s;
+		left:calc(50% - 96px);
+		up:calc(50% - 96px);
+		position:absolute;
+		width:192px;
+		height:192px;
+	}
+	.g3:hover {
+		animation-name: g3select;
+		animation-iteration-count:once;
+		animation-duration: 0.25s;
+		left:calc(12px + 50% - 96px);
+		up:calc(12px + 50% - 96px);
+		position:absolute;
+		width:170px;
+		height:170px;
+	}
+	@keyframes g3select {
+		0% {position:absolute;left:calc(50% - 96px);up:calc(50% - 96px);width:192px;height:192px;}
+		100% {position:absolute;left:calc(12px + 50% - 96px);up:calc(25px + 50% - 96px);width:170px;height:170px;}
+	}
+	@keyframes g3deselect {
+		0% {position:absolute;left:calc(12px + 50% - 96px);up:calc(25px + 50% - 96px);width:170px;height:170px;}
+		100% {position:absolute;left:calc(50% - 96px);up:calc(50% - 96px);width:192px;height:192px;}
+	}
+	
+	.g4 {
+		animation-name: g4deselect;
+		animation-iteration-count:once;
+		animation-duration: 0.25s;
+		left:calc(70% - 96px);
+		up:calc(70% - 96px);
+		position:absolute;
+		width:192px;
+		height:192px;
+	}
+	.g4:hover {
+		animation-name: g4select;
+		animation-iteration-count:once;
+		animation-duration: 0.25s;
+		left:calc(12px + 70% - 96px);
+		up:calc(12px + 70% - 96px);
+		position:absolute;
+		width:170px;
+		height:170px;
+	}
+	@keyframes g4select {
+		0% {position:absolute;left:calc(70% - 96px);up:calc(70% - 96px);width:192px;height:192px;}
+		100% {position:absolute;left:calc(12px + 70% - 96px);up:calc(25px + 70% - 96px);width:170px;height:170px;}
+	}
+	@keyframes g4deselect {
+		0% {position:absolute;left:calc(12px + 70% - 96px);up:calc(25px + 70% - 96px);width:170px;height:170px;}
+		100% {position:absolute;left:calc(70% - 96px);up:calc(70% - 96px);width:192px;height:192px;}
+	}
+	
+	.g5 {
+		animation-name: g5deselect;
+		animation-iteration-count:once;
+		animation-duration: 0.25s;
+		left:calc(90% - 96px);
+		up:calc(90% - 96px);
+		position:absolute;
+		width:192px;
+		height:192px;
+	}
+	.g5:hover {
+		animation-name: g5select;
+		animation-iteration-count:once;
+		animation-duration: 0.25s;
+		left:calc(12px + 90% - 96px);
+		up:calc(12px + 90% - 96px);
+		position:absolute;
+		width:170px;
+		height:170px;
+	}
+	@keyframes g5select {
+		0% {position:absolute;left:calc(90% - 96px);up:calc(90% - 96px);width:192px;height:192px;}
+		100% {position:absolute;left:calc(12px + 90% - 96px);up:calc(25px + 90% - 96px);width:170px;height:170px;}
+	}
+	@keyframes g5deselect {
+		0% {position:absolute;left:calc(12px + 90% - 96px);up:calc(25px + 90% - 96px);width:170px;height:170px;}
+		100% {position:absolute;left:calc(90% - 96px);up:calc(90% - 96px);width:192px;height:192px;}
+	}
+	
+	
+	
+	
+	.g6 {
+		animation-name: g6deselect;
+		animation-iteration-count:once;
+		animation-duration: 0.25s;
+		left:calc(10% - 96px);
+		up:calc(10% - 96px);
+		position:absolute;
+		width:192px;
+		height:192px;
+	}
+	.g6:hover {
+		animation-name: g6select;
+		animation-iteration-count:once;
+		animation-duration: 0.25s;
+		left:calc(12px + 10% - 96px);
+		up:calc(12px + 10% - 96px);
+		position:absolute;
+		width:170px;
+		height:170px;
+	}
+	@keyframes g6select {
+		0% {position:absolute;left:calc(10% - 96px);up:calc(10% - 96px);width:192px;height:192px;}
+		100% {position:absolute;left:calc(12px + 10% - 96px);up:calc(25px + 10% - 96px);width:170px;height:170px;}
+	}
+	@keyframes g6deselect {
+		0% {position:absolute;left:calc(12px + 10% - 96px);up:calc(25px + 10% - 96px);width:170px;height:170px;}
+		100% {position:absolute;left:calc(10% - 96px);up:calc(10% - 96px);width:192px;height:192px;}
+	}
+	.g7 {
+		animation-name: g7deselect;
+		animation-iteration-count:once;
+		animation-duration: 0.25s;
+		left:calc(30% - 96px);
+		up:calc(30% - 96px);
+		position:absolute;
+		width:192px;
+		height:192px;
+	}
+	.g7:hover {
+		animation-name: g7select;
+		animation-iteration-count:once;
+		animation-duration: 0.25s;
+		left:calc(12px + 30% - 96px);
+		up:calc(12px + 30% - 96px);
+		position:absolute;
+		width:170px;
+		height:170px;
+	}
+	@keyframes g7select {
+		0% {position:absolute;left:calc(30% - 96px);up:calc(30% - 96px);width:192px;height:192px;}
+		100% {position:absolute;left:calc(12px + 30% - 96px);up:calc(25px + 30% - 96px);width:170px;height:170px;}
+	}
+	@keyframes g7deselect {
+		0% {position:absolute;left:calc(12px + 30% - 96px);up:calc(25px + 30% - 96px);width:170px;height:170px;}
+		100% {position:absolute;left:calc(30% - 96px);up:calc(30% - 96px);width:192px;height:192px;}
+	}
+	
+	.g8 {
+		animation-name: g8deselect;
+		animation-iteration-count:once;
+		animation-duration: 0.25s;
+		left:calc(50% - 96px);
+		up:calc(50% - 96px);
+		position:absolute;
+		width:192px;
+		height:192px;
+	}
+	.g8:hover {
+		animation-name: g8select;
+		animation-iteration-count:once;
+		animation-duration: 0.25s;
+		left:calc(12px + 50% - 96px);
+		up:calc(12px + 50% - 96px);
+		position:absolute;
+		width:170px;
+		height:170px;
+	}
+	@keyframes g8select {
+		0% {position:absolute;left:calc(50% - 96px);up:calc(50% - 96px);width:192px;height:192px;}
+		100% {position:absolute;left:calc(12px + 50% - 96px);up:calc(25px + 50% - 96px);width:170px;height:170px;}
+	}
+	@keyframes g8deselect {
+		0% {position:absolute;left:calc(12px + 50% - 96px);up:calc(25px + 50% - 96px);width:170px;height:170px;}
+		100% {position:absolute;left:calc(50% - 96px);up:calc(50% - 96px);width:192px;height:192px;}
+	}
+	
+	.g9 {
+		animation-name: g9deselect;
+		animation-iteration-count:once;
+		animation-duration: 0.25s;
+		left:calc(70% - 96px);
+		up:calc(70% - 96px);
+		position:absolute;
+		width:192px;
+		height:192px;
+	}
+	.g9:hover {
+		animation-name: g9select;
+		animation-iteration-count:once;
+		animation-duration: 0.25s;
+		left:calc(12px + 70% - 96px);
+		up:calc(12px + 70% - 96px);
+		position:absolute;
+		width:170px;
+		height:170px;
+	}
+	@keyframes g9select {
+		0% {position:absolute;left:calc(70% - 96px);up:calc(70% - 96px);width:192px;height:192px;}
+		100% {position:absolute;left:calc(12px + 70% - 96px);up:calc(25px + 70% - 96px);width:170px;height:170px;}
+	}
+	@keyframes g9deselect {
+		0% {position:absolute;left:calc(12px + 70% - 96px);up:calc(25px + 70% - 96px);width:170px;height:170px;}
+		100% {position:absolute;left:calc(70% - 96px);up:calc(70% - 96px);width:192px;height:192px;}
+	}
+	
+	.g10 {
+		animation-name: g10deselect;
+		animation-iteration-count:once;
+		animation-duration: 0.25s;
+		left:calc(90% - 96px);
+		up:calc(90% - 96px);
+		position:absolute;
+		width:192px;
+		height:192px;
+	}
+	.g10:hover {
+		animation-name: g10select;
+		animation-iteration-count:once;
+		animation-duration: 0.25s;
+		left:calc(12px + 90% - 96px);
+		up:calc(12px + 90% - 96px);
+		position:absolute;
+		width:170px;
+		height:170px;
+	}
+	@keyframes g10select {
+		0% {position:absolute;left:calc(90% - 96px);up:calc(90% - 96px);width:192px;height:192px;}
+		100% {position:absolute;left:calc(12px + 90% - 96px);up:calc(25px + 90% - 96px);width:170px;height:170px;}
+	}
+	@keyframes g10deselect {
+		0% {position:absolute;left:calc(12px + 90% - 96px);up:calc(25px + 90% - 96px);width:170px;height:170px;}
+		100% {position:absolute;left:calc(90% - 96px);up:calc(90% - 96px);width:192px;height:192px;}
+	}
+</style>
+<style id="mousecss">
+</style>
+<script>
+	document.onmousemove = function(mouse) {
+		document.getElementById("mousecss").innerHTML = `
+			:root {
+				--mouseX:`+(((mouse.x - (window.screen.width/2))/window.screen.width)*30)+`deg;
+				--mouseY:`+(((mouse.y - (window.screen.height/2))/window.screen.height)*-30)+`deg;
+			}
+		`;
+	}
+</script>
+<div style="margin-left:10%;width:80%;">
+	<h1 style="font-family:arial;">My games:</h1>
+	<a href="https://tileworld.xyz"><img src="https://tileworld.xyz/favicon.png" alt="Tileworld" class="g1" style="position:absolute;border-radius:16px;box-shadow: -5px 5px 10px #1e2c3e;transform:perspective(256px) rotateY(calc(var(--mouseX) + 10deg)) rotateX(calc(var(--mouseY) - 2deg));"></a>
+	<a href="https://tileworld.xyz"><img src="" alt="Game 2" class="g2" style="position:absolute;border-radius:16px;box-shadow: -5px 5px 10px #1e2c3e;transform:perspective(256px) rotateY(calc(var(--mouseX) + 5deg)) rotateX(calc(var(--mouseY) - 5deg));"></a>
+	<a href="https://tileworld.xyz"><img src="" alt="Game 3" class="g3" style="position:absolute;border-radius:16px;box-shadow: -5px 5px 10px #1e2c3e;transform:perspective(256px) rotateY(calc(var(--mouseX) + 0deg)) rotateX(calc(var(--mouseY) - 5deg));"></a>
+	<a href="https://tileworld.xyz"><img src="" alt="Game 4" class="g4" style="position:absolute;border-radius:16px;box-shadow: -5px 5px 10px #1e2c3e;transform:perspective(256px) rotateY(calc(var(--mouseX) - 5deg)) rotateX(calc(var(--mouseY) - 5deg));"></a>
+	<a href="https://tileworld.xyz"><img src="" alt="Game 5" class="g5" style="position:absolute;border-radius:16px;box-shadow: -5px 5px 10px #1e2c3e;transform:perspective(256px) rotateY(calc(var(--mouseX) - 10deg)) rotateX(calc(var(--mouseY) - 5deg));"></a>
+<!--space--><div style="height:235px;"></div>
+	<a href="https://tileworld.xyz"><img src="" alt="Game 6" class="g6" style="position:absolute;border-radius:16px;box-shadow: -5px 5px 10px #1e2c3e;transform:perspective(256px) rotateY(calc(var(--mouseX) + 10deg)) rotateX(calc(var(--mouseY) + 1deg));"></a>
+	<a href="https://tileworld.xyz"><img src="" alt="Game 7" class="g7" style="position:absolute;border-radius:16px;box-shadow: -5px 5px 10px #1e2c3e;transform:perspective(256px) rotateY(calc(var(--mouseX) + 5deg)) rotateX(calc(var(--mouseY) + 1deg));"></a>
+	<a href="https://tileworld.xyz"><img src="" alt="Game 8" class="g8" style="position:absolute;border-radius:16px;box-shadow: -5px 5px 10px #1e2c3e;transform:perspective(256px) rotateY(calc(var(--mouseX) + 0deg)) rotateX(calc(var(--mouseY) + 1deg));"></a>
+	<a href="https://tileworld.xyz"><img src="" alt="Game 9" class="g9" style="position:absolute;border-radius:16px;box-shadow: -5px 5px 10px #1e2c3e;transform:perspective(256px) rotateY(calc(var(--mouseX) - 5deg)) rotateX(calc(var(--mouseY) + 1deg));"></a>
+	<a href="https://tileworld.xyz"><img src="" alt="Game 10" class="g10" style="position:absolute;border-radius:16px;box-shadow: -5px 5px 10px #1e2c3e;transform:perspective(256px) rotateY(calc(var(--mouseX) - 10deg)) rotateX(calc(var(--mouseY) + 1deg));"></a>
+</div>
